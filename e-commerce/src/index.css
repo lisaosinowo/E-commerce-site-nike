@@ -12,3 +12,46 @@
     font-family: 'Nunito Sans Variable', sans-serif;
     }
 }
+
+/* ANIMATIONS */
+
+@theme {
+    /* You have to create a custom animation variable */
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+    --animate-float: float 4s ease-in-out infinite;
+    --animate-fadeIn: fadeIn 2s ease-in-out;
+
+    /* ease in out makes the animation slow at the beginning, faster in the middle, then slow at the end */
+    @keyframes wiggle {
+        0% {
+            transform: rotate(-3deg);
+        }
+        50% {
+            transform: rotate(3deg);
+        }
+        100% {
+            transform: rotate(-3deg);
+        }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

@@ -8,7 +8,7 @@ const ShoeDetail = () => {
       {/* Shoe Image */}
       <div className="flex-1 lg:-mt-32 lg:ml-28">
         <div className="flex-center h-full bg-linear-to-br from-[#f637cf] via-[#e3d876] to-[#4cc4c6]">
-          <img src={nike1} />
+          <img className="animate-float" src={nike1} />
         </div>
       </div>
       <div className="flex-1 space-y-6">

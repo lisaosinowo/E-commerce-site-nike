@@ -14,7 +14,7 @@ const Select = ({ title, options }: { title: string; options: number[] }) => {
         ))}
       </select>
       <div className="absolute inset-y-0 right-0 flex-center pr-3"> 
-        {/*inset-y-0 makes the div vertically centered */}
+        {/*inset-y-0 makes the div vertically centered  */}
         <IoIosArrowDown />
       </div>
     </div>

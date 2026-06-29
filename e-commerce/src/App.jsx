@@ -3,7 +3,7 @@ import ShoeDetail from "./components/ShoeDetail";
 
 const App = () => {
   return (
-    <div className="p-10 xl: px-10">
+    <div className="p-10 xl: px-10 animate-fadeIn">
           <Nav />
           <ShoeDetail />
     </div>
