@@ -4,8 +4,8 @@ const ShoeDetail = () => {
   return (
     <div className="flex flex-col lg:flex-row-reverse space-y-4">
       {/* Shoe Image */}
-      <div className="flex-1">
-        <div className="">
+      <div className="flex-1 lg:-mt-32 lg:ml-28">
+        <div className="flex-center h-full bg-linear-to-br from-[#f637cf] via-[#e3d876] to-[#4cc4c6]">
           <img src={nike1} />
         </div>
       </div>
