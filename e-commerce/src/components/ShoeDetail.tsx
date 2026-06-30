@@ -24,7 +24,7 @@ const ShoeDetail = () => {
           <Select title="QTY" options={QUANTITIES} />
           <Select title="SIZE" options={SIZES} />
         </div>
-       
+
         {/* Shoe Button and Links */}
         <div className="space-x-10">
           <button className="hover:bg-gray-900 cursor-pointer active:bg-gray-700 h-14 w-44 bg-black text-white">

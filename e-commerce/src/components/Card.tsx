@@ -1,4 +1,4 @@
-type Item = {
+export type Item = {
   id: number;
   src: string;
   className: string;
