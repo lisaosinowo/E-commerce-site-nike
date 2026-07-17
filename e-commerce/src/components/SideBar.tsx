@@ -8,7 +8,7 @@ const SideBar = ({ children, isOpen, onClickClose }: SideBarProps) => {
   return (
     <div>
       <div
-        className={`h-full w-full bg-white fixed top-0 z-50 right-0 transition transform duration-300 shadow-lg p-5 md:w-[50%] lg:w-[35%] ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`overflow-y-auto h-full w-full bg-white fixed top-0 z-50 right-0 transition transform duration-300 shadow-lg p-5 md:w-[50%] lg:w-[35%] ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <button
           onClick={onClickClose}

@@ -5,6 +5,7 @@ import { SHOES } from "./constant";
 import NewArrivals from "./components/NewArrivals";
 import SideBar from "./components/SideBar";
 import { useState } from "react";
+import CartItem from "./components/CartItem";
 
 const App = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -17,9 +18,13 @@ const App = () => {
       <NewArrivals items={SHOES} />
       <SideBar
         isOpen={isSideBarOpen}
-        onClickClose={() => setIsSideBarOpen(false)}>
-        hi
-        </SideBar>
+        onClickClose={() => setIsSideBarOpen(false)}
+      >
+        <h2 className="m-10 text-2xl font-bold">Cart</h2>
+        <CartItem item={SHOES[0]} />
+        <CartItem item={SHOES[1]} />
+        <CartItem item={SHOES[2]} />
+      </SideBar>
     </div>
   );
 };
